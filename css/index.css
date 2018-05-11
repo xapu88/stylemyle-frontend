@@ -78,11 +78,6 @@
        url('/assets/montserrat-v12-latin-700.svg#Montserrat') format('svg'); /* Legacy iOS */
 }
 
-
-#main_menu>li>a:first-child {
-  /*padding-left: 0;*/
-}
-
 #header_bottom {
   padding: 5px 15px;
 }
@@ -119,7 +114,6 @@
   top: 20px;
   right: 20px;
   left: auto;
-  /*font-family: 'EG', Arial, sans-serif;*/
   font-family: 'Montserrat', Arial, sans-serif;
   font-size: 24px;
   font-weight: 300 !important;
@@ -139,7 +133,6 @@
   right: 15px;
   left: auto;
   font-family: 'EG', Arial, sans-serif;
-  /*font-family: 'Montserrat', Arial, sans-serif;*/
   font-size: 36px;
   text-align: right;
 }
@@ -148,7 +141,6 @@
   top: 15px;
   margin-left: 15px;
   font-family: 'EG', Arial, sans-serif;
-  /*font-family: 'Montserrat', Arial, sans-serif;*/
   font-size: 24px;
   text-align: left;
 }
@@ -214,18 +206,34 @@
   #section_2 .col-xs-12 {
     margin-bottom: 15px;
   }
+
+  #section_with_border {
+    margin-top: 55px;
+  }
+
+  #section_with_border .divider {
+    margin-bottom: 35px;
+  }
+
+  #section_with_border .divider-bottom {
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+
+  #section_with_border .col-xs-12{
+    text-align: left !important;
+    margin-bottom: 30px;
+  }
+
+  #section_with_border a img {
+    margin-top: 15px;
+  }
 }
 
 @media only screen and (max-width : 991px) {
   #whats_trending {
     padding-left: 15px;
     padding-right: 15px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1060px;
   }
 }
 
