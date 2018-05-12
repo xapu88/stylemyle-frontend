@@ -18,6 +18,11 @@
 		width: 100%;
 	}
 
+	#sub_all>.container
+	{
+		width: 100%;
+	}
+
 	#home_section_1 .col-md-12 a span:nth-of-type(1)
 	{
 	    top: 38px;
@@ -172,6 +177,11 @@
 	}
 
 	#main_menu
+	{
+		display: none;
+	}
+
+	#header_bottom>ul
 	{
 		display: none;
 	}
