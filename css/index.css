@@ -179,18 +179,27 @@
   color: #000;
 }
 
-@media (max-width:320px) {
-    .homepage .fashion-banner .look-details {
-    max-width: 220px;
+.look-details.small-button {
+  max-width: 220px;
 }
-}@media (min-width:768px) {
-    .homepage .fashion-banner .look-details {
+
+@media (max-width:320px) {
+  .homepage .fashion-banner .look-details {
+    max-width: 220px;
+  }
+}
+
+@media (min-width:768px) {
+  .homepage .fashion-banner .look-details {
     max-width: 230px;
     margin-left: -4px;
+  }
 }
-}@media (min-width:992px) {
-    .homepage .fashion-banner .look-details {
+
+@media (min-width:992px) {
+  .homepage .fashion-banner .look-details {
     bottom: -85px;
+  }
 }
 
 .look-details h4,
@@ -240,12 +249,12 @@
 }
 
 #section_with_border {
-  margin-top: 85px;
+  margin-top: 100px;
 }
 
 #section_with_border .divider {
   border-top: 1px solid #999;
-  margin-bottom: 75px;
+  margin-bottom: 55px;
 }
 
 #section_with_border .divider-bottom {
@@ -282,7 +291,7 @@
 
 /******** Responsive ********/
 
-@media only screen and (max-width : 1199px){
+@media (max-width: 1199px){
   .container {
     width: 100%;
   }
@@ -311,7 +320,22 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .look-details.small-button {
+    max-width: 165px;
+    padding: 15px 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width : 939px) {
+  #section_with_border .look-details {
+    max-width: 220px;
+    padding: 15px 10px;
+  }
+}
+
 @media (min-width: 768px) {
+
   #section_2 .row {
     display: flex;
   }
@@ -333,11 +357,11 @@
   }
 
   #section_2 .col-xs-12 {
-    margin-bottom: 15px;
+    margin-bottom: 75px;
   }
 
   #section_with_border {
-    margin-top: 55px;
+    margin-top: 75px;
   }
 
   #section_with_border .divider {
@@ -345,12 +369,11 @@
   }
 
   #section_with_border .divider-bottom {
-    margin-top: 25px;
+    margin-top: 60px;
     margin-bottom: 20px;
   }
 
   #section_with_border .col-xs-12{
-    text-align: left !important;
     margin-bottom: 30px;
   }
 
@@ -359,9 +382,23 @@
   }
 }
 
+@media (min-width: 599px) and (max-width: 767px) {
+  #section_with_border .look-details {
+    max-width: 170px;
+    padding: 10px;
+    bottom: -70px;
+  }
+}
+
 @media (min-width: 599px) {
   #section_with_border .col-xs-12 {
     width: 33.33333333%;
+  }
+}
+
+@media (max-width: 598.99px) {
+  #section_with_border .col-xs-12 {
+    margin-bottom: 65px;
   }
 }
 
