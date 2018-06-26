@@ -8,12 +8,12 @@
     <style type="text/css">
       @font-face {
         font-family: 'EngraversGothicBT';
-        src: url('/assets/EngraversGothicBT.eot');
-        src: url('/assets/EngraversGothicBT.eot') format('embedded-opentype'),
-             url('/assets/EngraversGothicBT.woff2') format('woff2'),
-             url('/assets/EngraversGothicBT.woff') format('woff'),
-             url('/assets/EngraversGothicBT.ttf') format('truetype'),
-             url('/assets/EngraversGothicBT.svg#EngraversGothicBT') format('svg');
+        src: url('font/EngraversGothicBT.eot');
+        src: url('font/EngraversGothicBT.eot') format('embedded-opentype'),
+             url('font/EngraversGothicBT.woff2') format('woff2'),
+             url('font/EngraversGothicBT.woff') format('woff'),
+             url('font/EngraversGothicBT.ttf') format('truetype'),
+             url('font/EngraversGothicBT.svg#EngraversGothicBT') format('svg');
          font-weight: normal;
          font-style: normal;
       }
@@ -24,15 +24,27 @@
         }
       }
 
+      @media only screen and (max-width: 692px){
+        table.central-image a {
+          height: 110px !important;
+        }
+      }
+
       @media only screen and (max-width: 620px){
         .main-table {
           padding: 0 15px !important;
         }
-      }
 
-      @media only screen and (max-width: 692px){
-        table.central-image a {
-          height: 110px !important;
+        td.border {
+          padding:30px 35% 0 !important;
+        }
+
+        td.custom-height {
+          line-height: 0.8 !important;
+        }
+
+        td.footer-border {
+          padding:3px 40% 0 !important;
         }
       }
 
@@ -57,6 +69,12 @@
       @media only screen and (max-width: 410px){
         table.central-image a {
           height: 85px !important;
+        }
+      }
+
+      @media only screen and (max-width: 380px){
+        .table-welcome {
+          margin-top: 55px !important;
         }
       }
 
@@ -85,13 +103,13 @@
                               <tbody>
                                 <tr>
                                   <td valign="top">
-                                    <p style="font-size:13px;">EXPRESS DELIVERY AND FREE RETURNS WITHIN 28 DAYS.</p>
+                                    <p style="font-size:14px;">EXPRESS DELIVERY AND FREE RETURNS WITHIN 28 DAYS.</p>
                                   </td>
                                 </tr>
                               </tbody>
                             </table>
 
-                            <table cellpadding="0" cellspacing="0" width="100%" style="table-layout:fixed; padding:20px; margin-top:70px;">
+                            <table cellpadding="0" cellspacing="0" width="100%" style="table-layout:fixed; padding:20px; margin-top:70px;" class="table-welcome">
                               <tbody>
                                 <tr>
                                   <td>
@@ -109,7 +127,7 @@
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td style="padding:30px 172px 0;">
+                                  <td style="padding:30px 172px 0;" class="border">
                                     <div style="border-top:1px solid #202220;"></div>
                                   </td>
                                 </tr>
@@ -221,7 +239,7 @@
                                     <td>
                                       <a href="#" style="color:#202220; text-decoration:none; font-size:13px;">CONTACT US</a>
                                     </td>
-                                    <td>
+                                    <td class="custom-height">
                                       <a href="#" style="color:#202220; text-decoration:none; font-size:13px;">PERSONALIZE MY EMAILS</a>
                                     </td>
                                     <td>
@@ -249,7 +267,7 @@
                                     </td>
                                   </tr>
                                   <tr>
-                                    <td style="padding:3px 250px 0;">
+                                    <td style="padding:3px 250px 0;" class="footer-border">
                                       <div style="border-top:1px solid #202220;"></div>
                                     </td>
                                   </tr>
