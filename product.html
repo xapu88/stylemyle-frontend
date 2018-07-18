@@ -15,6 +15,8 @@
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<link rel="stylesheet" href="css/pgwslider.min.css">
 	<link rel="stylesheet" href="css/chosen.min.css">
+	<script src="js/magiczoomplus.js"></script>
+	<link rel="stylesheet" href="css/magiczoomplus.css">
   	<link rel="stylesheet" href="css/main.css">
   	<link rel="stylesheet" href="css/responsive.css">
   	<!--[if lt IE 9]>
@@ -32,7 +34,7 @@
 		<div id="size_chart">
 			<img src="images/size-chart.jpg">
 			<div id="chart_close">x</div>
-		</div>		
+		</div>
 	</div>
 	<div id="menu_overlay">
 	</div>
@@ -113,7 +115,7 @@
 			<div id="coupon_close">x</div>
 			<a href="">Sign Up!</a>
 		</div>
-	</div>	
+	</div>
 	<div class="loader_container">
 		<span class="loader"><span class="loader-inner"></span></span>
 	</div>
@@ -441,13 +443,16 @@
 		</div>
 		<div class="row">
 			<div class="col-md-6 product_images_container clearfix">
-				<ul class="pgwSlider">
-				    <li><img src="images/clothes/s1.jpg" data-zoom-image="images/clothes/s1.jpg"/></li>
-				    <li><img src="images/clothes/s2.jpg" data-zoom-image="images/clothes/s2.jpg"></li>
-				    <li><img src="images/clothes/s3.jpg" data-zoom-image="images/clothes/s3.jpg"></li>
-				    <li><img src="images/clothes/s4.jpg" data-zoom-image="images/clothes/s4.jpg"></li>
-				    <li><img src="images/clothes/s5.jpg" data-zoom-image="images/clothes/s5.jpg"></li>
-				</ul>
+				<div class="product_wrapper">
+					<a id="Zoom-1" class="MagicZoom" href="images/clothes/s1.jpg" data-options="zoomOn: click; zoomPosition: inner; expand: off;"><img src="images/clothes/s1.jpg?scale.height=400" alt=""/></a>
+			        <div class="selectors">
+			           <a data-zoom-id="Zoom-1" href="images/clothes/s1.jpg" data-image="images/clothes/s1.jpg"><img src="images/clothes/s1-small.jpg"/></a>
+			           <a data-zoom-id="Zoom-1" href="images/clothes/s2.jpg" data-image="images/clothes/s2.jpg"><img src="images/clothes/s2-small.jpg"/></a>
+			           <a data-zoom-id="Zoom-1" href="images/clothes/s3.jpg" data-image="images/clothes/s3.jpg"><img src="images/clothes/s3-small.jpg"/></a>
+			           <a data-zoom-id="Zoom-1" href="images/clothes/s4.jpg" data-image="images/clothes/s4.jpg"><img src="images/clothes/s4-small.jpg"/></a>
+			           <a data-zoom-id="Zoom-1" href="images/clothes/s5.jpg" data-image="images/clothes/s5.jpg"><img src="images/clothes/s5-small.jpg"/></a>
+			        </div>
+		        </div>
 			</div>
 			<div class="col-md-6 product_desc">
 				<h1>ZIMMERMANN</h1>
@@ -669,7 +674,7 @@
 	<script src="js/jquery.hoverIntent.min.js"></script>
 	<script type="text/javascript" src="js/pgwslider.min.js"></script>
 	<script src="js/chosen.jquery.js"></script>
-	<script src="js/jquery.elevateZoom-3.0.8.min.js"></script>
+	<!-- <script src="js/jquery.elevateZoom-3.0.8.min.js"></script> -->
   	<script src="js/main.js"></script>
 </body>
 </html>

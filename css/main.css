@@ -8335,3 +8335,56 @@ footer
     border-radius: 3px;
     z-index: 1000;
 }
+
+
+
+
+.product_wrapper
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#Zoom-1
+{
+  order: 2;
+  position: relative;
+  display: inline-block;
+  margin-right: 0;
+  flex-basis: 70.32%;
+  box-sizing: border-box;
+}
+
+.mz-zoom-window
+{
+  top: 81px !important;
+}
+
+.selectors
+{
+  flex-basis: 28%;
+  order: 1;
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.selectors a
+{
+  display: block;
+  position: relative;
+  width: 100%;
+  /*width: 100px;*/
+  height: 105px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.selectors a img
+{
+  width: 100%;
+}

@@ -1470,7 +1470,7 @@ $(document).ready(function()
 	
 	if($('.product_images_container').length > 0)
 	{
-		productImages();
+		//productImages();
 		productSpecs();
 	}
 	else{}
@@ -1498,5 +1498,19 @@ $(document).ready(function()
 	ccardLimits();
 	paymentFunction();
 	$('[data-toggle="tooltip"]').tooltip();
+
+
+	$('.slider-single').slick({
+ 	slidesToShow: 1,
+ 	slidesToScroll: 1,
+ 	arrows: false,
+ 	fade: false,
+ 	adaptiveHeight: true,
+ 	infinite: false,
+	useTransform: true,
+ 	speed: 400,
+ 	cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
+ 	});
+
 
 });
