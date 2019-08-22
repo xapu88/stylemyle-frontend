@@ -148,7 +148,13 @@ h2
     font-size: 24px;
 }
 
+.mb-30 {
+  margin-bottom: 30px;
+}
 
+.mt-30 {
+  margin-top: 30px;
+}
 
 /*========= LOADER =========*/
 
@@ -869,7 +875,7 @@ ul#menu_kids
 	/* filter: url(filters.svg#grayscale); Firefox 3.5+ */
     filter: gray; /* IE5+ */
     -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
-    -webkit-transition: all .3s ease-in-out;  
+    -webkit-transition: all .3s ease-in-out;
 }
 
 .submenu_featured a h4
